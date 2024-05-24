@@ -1,0 +1,67 @@
+.modal__holder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    min-height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.modal {
+    background: #fff8a5;
+    height: 100%;
+}
+
+.modal__name__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+}
+
+.modal__name__subtitle {
+    font-size: 1.2rem;
+}
+
+.modal__name {
+    margin-bottom: 2rem;
+}
+
+.modal {
+    padding: 2rem;
+}
+
+.section {
+    margin-bottom: 2rem;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.content {
+    font-size: 1.2rem;
+}
+
+.link {
+    color: blue;
+    text-decoration: none;
+}
+
+.bean {
+    display: inline-block;
+    border: 1px solid #000000;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+.close-btn {
+    background: none;
+    border: 1px solid #000000;
+    cursor: pointer;
+    font-family: 'Courier Prime', monospace;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}

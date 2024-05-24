@@ -1,23 +1,34 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import useFetch from './hooks/useFetch';
+import DesktopApp from './components/DesktopApp/DesktopApp';
+import MobileApp from './components/MobileApp/MobileApp';
+import { useMediaQuery } from 'react-responsive'
+
 
 function App() {
+  // Media query
+  const isDesktopOrLaptop = useMediaQuery({
+    query: '(min-width: 1224px)'
+  })
+
+  // State for the user list
+  const { data } = useFetch("https://jsonplaceholder.typicode.com/users");
+
+  // State for selected user
+  const [selectedUser, setSelectedUser] = useState(null);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      {
+        isDesktopOrLaptop ? 
+        <DesktopApp users={data} 
+          selectedUser={selectedUser} 
+          onUserSelected={(user) => setSelectedUser(user)}/> : 
+        <MobileApp users={data} 
+          selectedUser={selectedUser} 
+          onUserSelected={(user) => setSelectedUser(user)}/>
+      }
     </div>
   );
 }

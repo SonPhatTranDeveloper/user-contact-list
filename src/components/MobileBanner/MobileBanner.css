@@ -1,0 +1,29 @@
+.mobile-banner {
+    width: 100%;
+    background-color: #fff8a5;
+    position: relative;
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.mobile-banner__corner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid #000000;
+    border-left: 50px solid #ffffff;
+}
+
+.mobile-banner__holder {
+    width: 100%;
+}
+
+.mobile-banner__text {
+    font-size: 2rem;
+}

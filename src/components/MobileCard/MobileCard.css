@@ -1,0 +1,54 @@
+.card__holder {
+    width: 100%;
+    height: 100%;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.card__holder:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+}
+
+.card {
+    background: #fff8a5;
+    border: 2px solid #000000;
+    padding: 2rem;
+    position: relative;
+}
+
+.card__holder-inverted {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+}
+
+.card-inverted {
+    background: #000000;
+    color: #fff8a5;
+}
+
+.card-inverted:after {
+    background: #fff8a5;
+}
+
+.card::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.5rem;
+    z-index: -1;
+}
+
+.card__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.card__subtitle {
+    font-size: 1.2rem;
+}

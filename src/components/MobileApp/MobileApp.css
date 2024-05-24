@@ -1,0 +1,10 @@
+.mobile-app {
+    position: relative;
+    height: 100%;
+}
+
+.wrapper {
+    height: 100%;
+    padding: 1rem;
+    overflow: scroll;
+}
