@@ -1,5 +1,7 @@
 # User Contacts Display - ReactJS Project
 
+![Contact App UI](./images/ContactApp.png)
+
 This is a simple ReactJS project that fetches and displays user contact information from JSONPlaceholder. JSONPlaceholder is a free online REST API that provides placeholder data for testing and prototyping.
 
 ## Features
@@ -76,7 +78,7 @@ The application will automatically fetch user data from JSONPlaceholder and disp
 
 The application fetches data from the following endpoint:
 
-```GET https://jsonplaceholder.typicode.com/users: Returns a list of users```.
+- GET https://jsonplaceholder.typicode.com/users: Returns a list of users.
 
 ## Contributing
 
