@@ -6,7 +6,7 @@ function Card(props) {
         <div className={!props.isInverted ? 'card__holder' : ' card__holder card__holder-inverted'}>
             <div className={!props.isInverted ? 'card' : ' card card-inverted'} onClick={() => props.onClick()}>
                 <h3 className={!props.isInverted ? 'card__title' : 'card__title card__title-inverted'}>{props.name}</h3>
-                <h4 className={!props.isInverted ? 'card__subtitle' : 'card__subtitle card__subtitle-inverted'}>{props.email} | {props.phone}</h4>
+                <h4 className={!props.isInverted ? 'card__subtitle' : 'card__subtitle card__subtitle-inverted'}>📬 {props.email} | 📞 {props.phone}</h4>
             </div>
         </div>
     )
