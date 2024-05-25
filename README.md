@@ -12,7 +12,7 @@ This is a simple ReactJS project that fetches and displays user contact informat
 
 ## Demo
 
-You can see a live demo of the project here.
+You can see a live demo of the project via AWS Amplify Deployment here https://main.dt48jq760eddo.amplifyapp.com.
 
 ## Installation
 
@@ -21,7 +21,7 @@ To run this project locally, follow these steps:
 1) Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/user-contacts-display.git
+git clone https://github.com/SonPhatTranDeveloper/user-contact-list
 ```
 
 2) Navigate to the project directory:
